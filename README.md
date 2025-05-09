@@ -11,7 +11,7 @@ This project scrapes and analyzes car-related discussions from online forums to 
 - Attribute analysis for top car brands
 
 ## Technologies Used
-- Python 3.x
+- Python
 - BeautifulSoup4 for web scraping
 - Pandas for data manipulation
 - Scikit-learn for MDS analysis
@@ -19,24 +19,13 @@ This project scrapes and analyzes car-related discussions from online forums to 
 - Requests for HTTP requests
 - Numpy for numerical operations
 
-## Installation
-
-```bash
-# Clone this repository
-git clone https://github.com/yourusername/car-brand-analysis.git
-cd car-brand-analysis
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
 ## Usage
 
 ### 1. Web Scraping
 The script scrapes car forum discussions from Edmunds.com:
 
 ```python
-python scrape_forums.py
+python scrape_code.ipynb
 ```
 
 This will:
@@ -48,7 +37,7 @@ This will:
 Run the analysis script to process the scraped data:
 
 ```python
-python analyze_brands.py
+python code.ipynb
 ```
 
 This will:
@@ -82,27 +71,18 @@ For the top 5 most mentioned brands, the project identifies commonly associated 
 ## Output Examples
 
 ### Frequency Analysis
-```
-Top 10 Brands by Frequency:
-brand1    XXX
-brand2    XXX
-...
-```
+![image](https://github.com/user-attachments/assets/9d421e34-f6da-4928-9c7b-75748f2f5560)
+
+### Lift Ratios
+![image](https://github.com/user-attachments/assets/1082f15b-e178-466c-9a84-70b15aeffe66)
+
+### MDS Plot
+![image](https://github.com/user-attachments/assets/c733d4e9-7964-4415-9db5-34a2eab1dccc)
+
 
 ### Attribute-Brand Association
-```
-Brand to Attribute Frequency Table:
-             performance  comfort  reliability  price  fuel efficiency
-brand1              XXX      XXX          XXX    XXX              XXX
-brand2              XXX      XXX          XXX    XXX              XXX
-...
-```
+![image](https://github.com/user-attachments/assets/6a5e9afd-80e4-4ed1-bd31-ba28e04dd13a)
+
 
 ## Executive Summary
 From analyzing the forum, we see high association between Honda and Toyota (and Nissan). In comments where Toyota is mentioned with another brand, it is most likely to be Honda (or Nissan) and vice versa. As these brands are Japanese, this relationship is intuitive and is visualized in the MDS map with Toyota and Honda positioned close to each other. Both brands rank highly in terms of brands most discussed, with Honda in the top 5. This frequent mention in discussions about entry-level luxury performance sedans indicates strong brand relevancy.
-
-## License
-[Insert your chosen license here]
-
-## Contact
-[Your contact information]
